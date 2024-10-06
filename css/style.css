@@ -367,7 +367,7 @@ header {
 }
 
 footer {
-    background: url(/img/ai-generated-8515812_1280.jpg);
+    background: url(../img/header-footer.jpg);
     background-size: 50% 3000%;
     position: fixed;
     z-index: 10;
