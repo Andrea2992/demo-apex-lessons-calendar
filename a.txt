@@ -1,0 +1,30 @@
+'Fontanot Daniele',
+'INTERFACCE WEB HTML E CSS',
+
+
+
+'Trento Paolo',
+'PROGRAMMARE CON JAVASCRIPT',
+
+
+
+'Vega Sergio',
+'ORACLE APEX PROGRAMMING',
+'WEB SERVICES E API',
+
+
+
+'Sonetto Paola',
+'PROGRAMMAZIONE PL/SQL',
+
+
+
+
+
+
+
+
+
+
+
+
