@@ -6,7 +6,11 @@ let liId = '';
 function checkPastLessons() {
 
     const currentDay = new Date().toISOString().split('T')[0];
-    const currentTime = new Date().toISOString().split('T')[1].slice(0, 5);
+    const UTCTime = new Date();
+    const currentTime = UTCTime.toLocaleTimeString('it-IT', {
+        hour: '2-digit',
+        minute: '2-digit'
+      });
 
     const locStor = window.localStorage.getItem('lessons');
     const plocStor = JSON.parse(locStor);
