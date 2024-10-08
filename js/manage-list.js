@@ -11,7 +11,7 @@ function checkPastLessons() {
     const locStor = window.localStorage.getItem('lessons');
     const plocStor = JSON.parse(locStor);
     plocStor.forEach((element, index) => {
-        if (element.date <= currentDay || element.date == currentDay && element.ending < currentTime) {
+        if (element.date < currentDay || element.date == currentDay && element.ending < currentTime) {
             plocStor.splice(index, 1)
         }
     });
