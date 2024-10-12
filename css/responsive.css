@@ -1,0 +1,351 @@
+@media (min-width: 1px) and (max-width: 349.99px) {
+
+    #page {
+        width: 100%;
+        background-color: rgba(255, 228, 196, 0.45);
+    }
+
+    header {
+        font-size: 0.9rem;
+    }
+
+    #show-form {
+        padding: 6px 4px;
+    }
+
+    #lessons-container {
+        width: 100%;
+    }
+
+    .father-div {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    #ul-list {
+        font-size: 0.9rem;
+    }
+
+    #ul-list li {
+        width: 96%;
+    }
+
+    .subgrid>p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .subgrid2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subgrid2>p:nth-child(1) {
+        margin-bottom: 1px;
+    }
+
+    .button-div {
+        flex-direction: row;
+        width: 98%;
+    }
+
+    .button-div button {
+        width: 48%;
+        padding: 8px 0;
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    #day, #teachers, #subjects, #time-start, #time-finish {
+        width: 90%;
+    }
+
+    #confirm-add-lesson, #cancel-operation, #update-lesson {
+        width: 80%;
+        padding: 8px 14px;
+    }
+
+    #confirm-delete-element p {
+        width: 90%;
+    }
+
+    #confirm-delete-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 80%;
+        margin-top: 20px;
+        padding: 8px 14px;
+    }
+   
+    footer p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (min-width: 350px) and (max-width: 399.99px) {
+
+    #page {
+        width: 100%;
+        background-color: rgba(255, 228, 196, 0.45);
+    }
+
+    #lessons-container {
+        width: 100%;
+    }
+
+    .father-div {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    #ul-list li {
+        width: 96%;
+    }
+
+    .subgrid2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subgrid2>p:nth-child(1) {
+        margin-bottom: 1px;
+    }
+
+    .button-div {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .button-div button {
+        width: 46%;
+        padding: 8px 0;
+    }
+
+    #day, #teachers, #subjects, #time-start, #time-finish {
+        width: 85%;
+    }
+
+    #confirm-add-lesson, #cancel-operation, #update-lesson {
+        width: 70%;
+        padding: 8px 14px;
+    }
+
+    #confirm-delete-element p {
+        width: 85%;
+    }
+
+    #confirm-delete-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 80%;
+        margin-top: 20px;
+        padding: 8px 14px;
+    }
+   
+    footer p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 539.99px) {
+
+    #page {
+        width: 100%;
+        background-color: rgba(255, 228, 196, 0.45);
+    }
+
+    #lessons-container {
+        width: 100%;
+    }
+
+    .father-div {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    #ul-list li {
+        width: 96%;
+    }
+
+    .button-div {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .button-div button {
+        width: 46%;
+        padding: 8px 0;
+    }
+
+    #day, #teachers, #subjects, #time-start, #time-finish {
+        width: 85%;
+    }
+
+    #confirm-add-lesson, #cancel-operation, #update-lesson {
+        width: 62%;
+        padding: 8px 14px;
+    }
+
+    #confirm-delete-element p {
+        width: 85%;
+    }
+
+    #confirm-delete-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 70%;
+        margin-top: 20px;
+        padding: 8px 14px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 540px) and (max-width: 699.99px) {
+
+    #page {
+        width: 100%;
+        background-color: rgba(255, 228, 196, 0.45);
+    }
+
+    #lessons-container {
+        width: 98%;
+    }
+
+    .father-div {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .button-div {
+        flex-direction: row;
+        width: 75%;
+    }
+
+    .button-div button {
+        width: 48%;
+        padding: 8px 0;
+    }
+
+    #day, #teachers, #subjects, #time-start, #time-finish {
+        width: 60%;
+    }
+
+    #confirm-add-lesson, #cancel-operation, #update-lesson {
+        width: 50%;
+        padding: 8px 14px;
+    }
+
+    #confirm-delete-element p {
+        width: 85%;
+    }
+
+    #confirm-delete-buttons {
+        width: 100%;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 37%;
+        padding: 8px 14px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 799.99px) {
+
+    #page {
+        width: 95%;
+    }
+
+    #lessons-container {
+        width: 98%;
+    }
+
+    .button-div button {
+        width: 95%;
+    }
+
+    #day, #teachers, #subjects, #time-start, #time-finish {
+        width: 50%;
+    }
+
+    #confirm-delete-buttons {
+        width: 70%;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 999.99px) {
+
+    #page {
+        width: 85%;
+    }
+
+    #lessons-container {
+        width: 90%;
+    }
+
+    .button-div button {
+        width: 95%;
+    }
+
+    #day, #teachers, #subjects, #time-start, #time-finish {
+        width: 50%;
+    }
+
+    #confirm-delete-buttons {
+        width: 70%;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 35%;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1279.99px) {
+
+    #page {
+        width: 80%;
+    }
+
+    .button-div button {
+        width: 95%;
+    }
+
+    #confirm-delete-buttons button:nth-child(1),
+    #confirm-delete-buttons button:nth-child(2) {
+        width: 35%;
+    }
+
+}

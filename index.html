@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orari Oracle Apex</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-ac.png?v=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div id="page-background"></div>
+    <div id="page">
+        <header>
+            <h1 id="header">Orari Oracle Apex</h1>
+            <h2>Mancano <span id="lessons-counter"></span> Lezioni</h2>
+        </header>
+        <div id="new-item-button">
+            <button type="button" id="show-form" onclick="showForm()">Aggiungi Lezione</button>
+        </div>
+        <div id="lessons-container">
+            <ul id="ul-list">
+            </ul>
+        </div>
+       
+        <form id="new-item-form" class="hide" onsubmit="addLesson(event)">
+            <label for="day">Giorno:</label>
+            <input id="day" name="day" type="date" min="2024-09-01" required><br>
+            <label for="teachers">Insegnante:</label>
+            <select id="teachers" name="teachers" required>
+                <option value="">--scegli un insegnante--</option>
+                <option value="1">Trento Paolo</option>
+                <option value="2">Sonetto Paola</option>
+                <option value="3">Fontanot Daniele</option>
+                <option value="4">Vega Sergio</option>
+            </select><br>
+            <label for="subjects">Materie:</label>
+            <select id="subjects" name="subjects" required>
+                <option value="">--scegli una materia--</option>
+                <option value="1">FONDAMENTI DI PROGRAMMAZIONE</option>
+                <option value="2">INTERFACCE WEB HTML E CSS</option>
+                <option value="3">BASI DATI RELAZIONALI E SQL</option>
+                <option value="4">PROGRAMMARE CON JAVASCRIPT</option>
+                <option value="5">PROGRAMMAZIONE PL/SQL</option>
+                <option value="6">ORACLE APEX PROGRAMMING</option>
+                <option value="7">WEB SERVICES E API</option>
+            </select><br>
+            <label for="time-start">Ora inizio:</label>
+            <input id="time-start" name="time-start" type="time" required><br>
+            <label for="time-finish">Ora fine:</label>
+            <input id="time-finish" name="time-finish" type="time" required>
+            <div id="update-li">
+                <button type="button" id="update-lesson" class="hide" onclick="confirmUpdateLiElem()">Aggiorna Lezione</button>
+            </div>
+            <div id="send-form-button">
+                <input type="submit" id="confirm-add-lesson" class="hide" value="Aggiungi Lezione!!"></button>
+            </div>
+            <div id="cancel-operation-div">
+                <input type="button" id="cancel-operation" value="ANNULLA OPERAZIONE" onclick="cancelOperation()"></button>
+            </div>
+        </form>
+    </div>
+    <div id="confirm-delete-element" class="hide">
+        <p>Sei sicuro di voler procedere con l'eliminazione della lezione?</p>
+        <div id="confirm-delete-buttons">
+            <button type="button" onclick="confirmDeleteLiElem(divId)">Elimina</button>
+            <button type="button" onclick="cancelDelete()">Annulla</button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2024 Andrea Cok | All rights reserved</p>
+    </footer>
+    <script src="js/lessons-data.js"></script>
+    <script src="js/manage-list.js"></script>
+</body>
+
+</html>

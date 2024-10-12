@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page-background {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    background: url(../img/background.jpg) center / cover;
+}
+
+#page {
+    width: 70%;
+    background-color: rgba(255, 228, 196, 0.15);
+    margin: 0 auto 20px auto;
+    padding-bottom: 30px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: url(../img/header-footer.jpg);
+    background-size: 50% 1100%;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    font-size: 1.1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+
+#lessons-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ul-list {
+    padding: 0;
+}
+
+.father-div {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#ul-list li {
+    list-style: none;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px 0px;
+    border: 1px solid grey;
+    padding: 0px;
+    font-weight: bold;
+    color: #131313;
+}
+
+.subgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px 0;
+}
+
+.subgrid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subgrid>p:nth-child(1) {
+    background-color: #ff764d;
+    font-size: 1.2rem;
+}
+
+.subgrid>p:nth-child(2) {
+    background-color: #ffffff;
+}
+
+.subgrid2>p:nth-child(1) {
+    background-color: #dadada;
+}
+
+.subgrid2>p:nth-child(2) {
+    background-color: #dadada;
+}
+
+.button-div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-div button {
+    padding: 5px 0;
+    margin: 2px auto;
+    width: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+.button-div button:first-child {
+    background: linear-gradient(145deg, #4a90e2, #5ab3f5);
+}
+
+.button-div button:first-child:hover {
+    background: linear-gradient(145deg, #3286e6, #42a5f0);
+}
+
+.button-div button:nth-child(2) {
+    background: linear-gradient(145deg, #c53737, #ec6464);
+}
+
+.button-div button:nth-child(2):hover {
+    background: linear-gradient(145deg, #cc2a2a, #f14b4b);
+}
+
+.button-div button:active {
+    transform: scale(0.99);
+}
+
+#new-item-button {
+    width: 100%;
+    margin: 0px auto 15px auto;
+    text-align: center;
+    padding-top: 95px;
+}
+
+#show-form {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #36993b, #4CAF50);
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+#show-form:hover {
+    background: linear-gradient(145deg, #2eb135, #4ce751);
+}
+
+#show-form:active {
+    transform: scale(0.99);
+}
+
+#new-item-form {
+    background: url(../img/background.jpg) center / cover;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+}
+
+#day {
+    width: 30%;
+    text-align: center;
+    padding: 2px 0px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+#teachers {
+    width: 30%;
+    text-align: center;
+    padding: 3px 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+#subjects {
+    width: 30%;
+    text-align: center;
+    padding: 3px 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+#time-start {
+    width: 30%;
+    text-align: center;
+    padding: 2px 0px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+#time-finish {
+    width: 30%;
+    text-align: center;
+    padding: 2px 0px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+#update-li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#send-form-button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cancel-operation-div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#confirm-add-lesson {
+    width: 30%;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #36993b, #4CAF50);
+    color: white;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+#confirm-add-lesson:hover {
+    background: linear-gradient(145deg, #2eb135, #4ce751);
+}
+
+#confirm-add-lesson:active {
+    transform: scale(0.99);
+}
+
+#update-lesson {
+    width: 30%;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #4a90e2, #5ab3f5);
+    color: white;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+#update-lesson:hover {
+    background: linear-gradient(145deg, #3286e6, #42a5f0);
+}
+
+#update-lesson:active {
+    transform: scale(0.99);
+}
+
+#cancel-operation {
+    width: 30%;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #c53737, #ec6464);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+#cancel-operation:active {
+    transform: scale(0.99);
+}
+
+#cancel-operation:hover {
+    background: linear-gradient(145deg, #cc2a2a, #f14b4b);
+}
+
+#confirm-delete-element {
+    background: url(../img/background.jpg) center / cover;
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+}
+
+#confirm-delete-buttons {
+    display: flex;
+    width: 50%;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+#confirm-delete-buttons button:nth-child(1) {
+    width: 25%;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #c53737, #ec6464);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+#confirm-delete-buttons button:nth-child(1):hover {
+    background: linear-gradient(145deg, #cc2a2a, #f14b4b);
+}
+
+#confirm-delete-buttons button:nth-child(1):active {
+    transform: scale(0.99);
+}
+
+#confirm-delete-buttons button:nth-child(2) {
+    width: 25%;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #4a90e2, #5ab3f5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.397);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    transition: all 0.1s ease;
+}
+
+#confirm-delete-buttons button:nth-child(2):hover {
+    background: linear-gradient(145deg, #3286e6, #42a5f0);
+}
+
+#confirm-delete-buttons button:nth-child(2):active {
+    transform: scale(0.99);
+}
+
+.hide {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+footer {
+    background: url(../img/header-footer.jpg);
+    background-size: 50% 3000%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+footer p {
+    padding: 10px 0;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow:
+        -3px -3px 5px white,
+        3px -3px 5px white,
+        -3px 3px 5px white,
+        3px 3px 5px white;
+}
